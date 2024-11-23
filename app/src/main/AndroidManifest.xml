@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EnergyLink"
+        tools:targetApi="31"
+        android:enableOnBackInvokedCallback="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SelecaoActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".LoginUsuarioActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".LoginComunidadeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".LoginFabricaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".CadastroUsuarioActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".CadastroComunidadeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".CadastroFabricaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MenuUsuarioActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ContratoActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".PerfilUsuarioActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".PerfilFabricaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PerfilComunidadeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MenuFabricaActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".MenuComunidadeActivity"
+            android:exported="true" />
+
+
+
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "827384731496",
+    "project_id": "energylink-f02e3",
+    "storage_bucket": "energylink-f02e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827384731496:android:8f4b29b40c20bfc40da8dd",
+        "android_client_info": {
+          "package_name": "com.fiap.energylink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827384731496-7orr97fk1m9hjre17sj2gf92invnebe4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fiap.energylink",
+            "certificate_hash": "d9bcfe5d54e46ae701f08fc40883c85230e2b600"
+          }
+        },
+        {
+          "client_id": "827384731496-75na14bduer6o6sssc1kn2h1d83bre23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj_D-xB5NVmG-p-owjWZYgNpx0TAjzyWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827384731496-75na14bduer6o6sssc1kn2h1d83bre23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

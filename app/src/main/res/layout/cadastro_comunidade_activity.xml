@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    tools:context=".CadastroComunidadeActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3.6sp"
+        android:text="Crie sua Comunidade"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nome_entidade_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/estado_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#80FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Digite o estado"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pais_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cidade_input" />
+
+    <EditText
+        android:id="@+id/pais_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite o país"
+        android:textColorHint="#80FFFFFF"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/cadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/estado_input" />
+
+    <EditText
+        android:id="@+id/cidade_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#80FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Digite a cidade"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/estado_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cep_input" />
+
+    <EditText
+        android:id="@+id/cep_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:textColorHint="#80FFFFFF"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite o CEP"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/cidade_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capacidade_input" />
+
+    <EditText
+        android:id="@+id/capacidade_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:textColorHint="#80FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite a capacidade de produção"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/cep_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_input" />
+
+    <EditText
+        android:id="@+id/tipo_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="#80FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Digite o tipo de energia"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/capacidade_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_entidade_input" />
+
+    <EditText
+        android:id="@+id/nome_entidade_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="#80FFFFFF"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite o nome da entidade"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tipo_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Cadastre-se"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:lineSpacingExtra="5.6sp"
+        android:text="Já possui uma conta?"
+        android:textColor="#73747d"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cadastro"
+        app:layout_constraintEnd_toEndOf="@+id/pais_input"
+        app:layout_constraintStart_toStartOf="@+id/pais_input" />
+
+    <Button
+        android:id="@+id/cadastro"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:lineSpacingExtra="5.6sp"
+        android:text="Acesse"
+        android:textColor="#3274b7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pais_input"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

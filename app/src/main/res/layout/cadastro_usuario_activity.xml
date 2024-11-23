@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    tools:context=".CadastroUsuarioActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3.6sp"
+        android:text="Crie seu usuário"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nome_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/telefone_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#80FFFFFF"
+        android:inputType="number"
+        android:hint="Digite seu telefone"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pais_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha_input" />
+
+    <EditText
+        android:id="@+id/pais_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite o tipo do usuário"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/cadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefone_input" />
+
+    <EditText
+        android:id="@+id/senha_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite sua senha"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/telefone_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="22dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite seu E-mail"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/senha_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpf_input" />
+
+    <EditText
+        android:id="@+id/cpf_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite seu CPF"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/email_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sobrenome_input" />
+
+    <EditText
+        android:id="@+id/sobrenome_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite seu sobrenome"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/cpf_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_input" />
+
+    <EditText
+        android:id="@+id/nome_input"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#80FFFFFF"
+        android:hint="Digite seu nome"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/sobrenome_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Cadastre-se"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:lineSpacingExtra="5.6sp"
+        android:text="Já possui uma conta?"
+        android:textColor="#73747d"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cadastro"
+        app:layout_constraintEnd_toEndOf="@+id/pais_input"
+        app:layout_constraintStart_toStartOf="@+id/pais_input" />
+
+    <Button
+        android:id="@+id/cadastro"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:lineSpacingExtra="5.6sp"
+        android:text="Acesse"
+        android:textColor="#3274b7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pais_input"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
