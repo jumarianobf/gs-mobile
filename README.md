@@ -48,12 +48,12 @@ git clone https://github.com/seu-usuario/energylink.git
 ##
 
 # Video
-** [Projeto Funcionando](https://www.youtube.com/watch?v=MH-hsxo7JXk)
+**[Projeto Funcionando](https://www.youtube.com/watch?v=MH-hsxo7JXk)
 
 ##
 
 # Figma
-** https://www.figma.com/design/vyuwCk9r8wTl51w4VTsvxv/Untitled?node-id=0-1&node-type=canvas&t=JHGNsaZA5f5rRYai-0 
+**https://www.figma.com/design/vyuwCk9r8wTl51w4VTsvxv/Untitled?node-id=0-1&node-type=canvas&t=JHGNsaZA5f5rRYai-0 
 
 ## Desenvolvedores
 
